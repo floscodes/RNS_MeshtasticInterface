@@ -154,15 +154,6 @@ Specify at most one of `port`, `host`, or `ble`.
 - Setting `modem_preset` writes the selected LoRa preset to the radio if its
   current value differs.
 
-## Wire-format compatibility
-
-This interface uses its own versioned `RNSM` binary framing with a random
-transfer ID and whole-packet CRC. It does not interoperate over the air with
-the separate
-[`landandair/RNS_Over_Meshtastic`](https://github.com/landandair/RNS_Over_Meshtastic)
-two-byte fragment format. Every Reticulum endpoint on the same Meshtastic
-transport must use this interface.
-
 ## License
 
 See [LICENSE](LICENSE). The license notice is also included in
